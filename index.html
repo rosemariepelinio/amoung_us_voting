@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Among Us Voting</title>
+	<style type="text/css">
+		@font-face {
+		    font-family: 'msb';
+		    src: url('fonts/mercedes-serial-bold.ttf');
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 856px; height: 581px; background: url(images/tablet.png)">
+		<div style="height: 100%; position: relative; top: 34px; left: 37px; width: 733px; height: 508px; ">
+			<div style="width: 100%; height: 50px; font-size: 32pt; text-align: center; position: relative; top: 30px; font-family: msb; color: white; -webkit-text-stroke: 2px black;">
+				Who Is The Impostor?
+			</div>	
+			<div style="position: relative; width: 100%; height: 408px; top: 50px;">
+				<div style="width: 100%; height: 60px;" >
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 1 <span id="#p1vote">(0)</span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 2 <span id="#p2vote">(0)</span>
+						</div>
+					</div>
+				</div>
+
+				<div style="width: 100%; height: 60px; margin-top: 10px;" >
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 3 <span id="#p3vote">(0)</span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 4 <span id="#p4vote">(0)</span>
+						</div>
+					</div>
+				</div>
+
+				<div style="width: 100%; height: 60px; margin-top: 10px;" >
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 5 <span id="#p5vote">(0)</span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 6 <span id="#p6vote">(0)</span>
+						</div>
+					</div>
+				</div>
+
+				<div style="width: 100%; height: 60px; margin-top: 10px;" >
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 7 <span id="#p7vote">(0)</span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 8 <span id="#p8vote">(0)</span>
+						</div>
+					</div>
+				</div>
+
+				<div style="width: 100%; height: 60px; margin-top: 10px;" >
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 9 <span id="#p9vote">(0)</span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Player 10 <span id="#p10vote">(0)</span>
+						</div>
+					</div>
+				</div>
+
+
+			</div>	
+		</div>
+		
+	</div>
+</body>
+</html>
